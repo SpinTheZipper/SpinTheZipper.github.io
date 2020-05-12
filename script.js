@@ -14,6 +14,13 @@ var frameLength = 99999;
 var maxPos = width*frameCount;
 var spin;
 
+//Text vars
+var textList = ["Hang in there!", "Go Dinos!", "You got this!", 
+                "Drink Water!", "Do your best", "Have fun!", 
+                "Go outside", "Be creative", "Do something you enjoy", 
+                "Talk to a friend", "At least we're not MRU", "RIP BSD", 
+                "Stay Safe", "Rex says hi"]
+
 //Add spin to the zipper
 function addSpin() {
     frameLength -= spinValue;
@@ -22,6 +29,15 @@ function addSpin() {
     else if (frameLength > 100)
         frameLength = 100;
     doSpin();
+}
+
+//Change the text
+function changeText()
+{
+    document.getElementById("goodText").innerHTML = textList[Math.floor(Math.random() * textList.length)];
+
+    //After 3 sec change text
+    setTimeout( () => { changeText(); }, 3000);
 }
 
 //Change the frame
@@ -44,5 +60,5 @@ function doSpin()
     
 }
 
-//Start a timer for the next spin
-spin = setTimeout( () => { doSpin(); }, frameLength);
+//Start timer till text change
+setTimeout( () => { changeText(); }, 3000);
