@@ -27,19 +27,21 @@ function addSpin() {
 //Change the frame
 function doSpin()
 {
-    document.getElementById("anim").style.backgroundPosition = `-${pos}px 0px`;
+    if (frameLength < 250)
+    {
+        document.getElementById("anim").style.backgroundPosition = `-${pos}px 0px`;
 
-    if (pos <= maxPos) 
-        pos += width;
-    else 
-        pos = 256;
-
-    frameLength += slowDown;
-    if (frameLength > 300)
-        frameLength = 99999;
-
-    clearTimeout(spin);
-    spin = setTimeout(() => {doSpin();}, frameLength);
+        if (pos <= maxPos) 
+            pos += width;
+        else 
+            pos = 256;
+    
+        frameLength += slowDown;
+    
+        clearTimeout(spin);
+        spin = setTimeout(() => {doSpin();}, frameLength);
+    }
+    
 }
 
 //Start a timer for the next spin

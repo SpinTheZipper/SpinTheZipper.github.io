@@ -1,4 +1,13 @@
 
+#container{
+    display: grid;
+    grid-row-gap: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
 #anim {
     margin: auto;
     height: 256px;
@@ -6,14 +15,66 @@
     background: url('./Frames/ZipperTest.png') 0px 0px;
 }
 
+#wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #8d827a;
+}
+
 #spinButton{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    width: 128px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
 }
 
-#centered{
+#spinButton:hover {
+    background-color: #af2626;
+  }
+
+.parentCenter{
     text-align: center;
+}
+
+#gluedText{
+    margin-top: 0;
+}
+
+.redBackground{
+    background-color: #e30c00;
+}
+
+#header{
+    text-align: left;
+    background-color: #8d827a;
+    height: 100%;
+    width: 100%;
+    border-top: solid;
+    border-width: 5px;
+    border-color: #e30c00;
+    color: white;
+}
+
+.subtext{
+    font-size: small;
+}
+
+.title{
+    padding-left: 10px;
+}
+
+.text{
+    margin: 0;
+    padding: 5px;
+}
+
+.darkGrey{
+    color: #8d827a;
 }
 
 * {

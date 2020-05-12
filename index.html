@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
-<body>
+<body id="wrapper">
 
-    <h1>Spin the Zipper</h1>
+    <div id="container">
+        <div id="header">
+            <h1 class="title">Spin the Zipper</h1>
+        </div>
+        
+        <div class="parentCenter redBackground">
+            <p id="text" class="text"> Hello there</p>
+        </div>
+    
+        <div class="parentCenter">
+            <p id="anim"></p>
+        </div>
+    
+        <div class="parentCenter">
+            <button id="spinButton" class="redBackground" type="button" onclick="addSpin()">Click to Spin</button>
+        </div>
 
-    <div id="centered">
-
-        <p id="text"> Hello there</p>
-
-        <p id="anim"></p>
-
-        <button id="spinButton" type="button" onclick="addSpin()">Click to Spin</button>
-
+        <div class="parentCenter">
+            <p id="gluedText" class="subtext darkGrey"> Click a lot to spin faster</p>
+        </div>
+        
     </div>
+
 </body>
 </html>
