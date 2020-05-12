@@ -1,0 +1,21 @@
+
+#anim {
+    margin: auto;
+    height: 256px;
+    width: 128px;
+    background: url('./Frames/ZipperTest.png') 0px 0px;
+}
+
+#spinButton{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#centered{
+    text-align: center;
+}
+
+* {
+    font-family: Gadget, Gadget, sans-serif;
+}
