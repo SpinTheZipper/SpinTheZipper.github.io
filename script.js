@@ -16,10 +16,12 @@ var spin;
 
 //Text vars
 var textList = ["Hang in there!", "Go Dinos!", "You got this!", 
-                "Drink Water!", "Do your best", "Have fun!", 
-                "Go outside", "Be creative", "Do something you enjoy", 
-                "Talk to a friend", "At least we're not MRU", "RIP BSD", 
-                "Stay Safe", "Rex says hi"]
+                "Drink Water!", "Do your best!", "Have fun!", 
+                "Go outside!", "Be creative!", "Do something you enjoy!", 
+                "Talk to a friend!", "At least we're not MRU!", "RIP BSD", 
+                "Stay Safe!", "Rex says hi!", "How fast can you spin?",
+                "How stressed are you?", "Wash your hands!", "Can't catch corona from this zipper!",
+                "Refrain from touching real zipper!", "Don't break an arm!", "Engineers beware!"]
 
 //Add spin to the zipper
 function addSpin() {
